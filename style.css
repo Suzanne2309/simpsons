@@ -1,0 +1,109 @@
+/************************************************************* General ********************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding-top: 0.5em;
+}
+
+/************************************************************* Body ********************************************************/
+
+body {
+    background-color: yellow;
+}
+
+/************************************************************* Wrapper ********************************************************/
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/************************************************************* Header ********************************************************/
+
+header {
+    background-color: blue;
+    color: white;
+}
+
+h2 {
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+}
+
+header figure img {
+    width: 100%;
+    margin: auto;
+    vertical-align: top;
+}
+
+/************************************************************* Main ********************************************************/
+
+main {
+    background-color: white;
+    padding: 1em 2em 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*                                                             Navbar                                                          */
+
+nav {
+    background-color: blue;
+    width: 20%;
+    height: 20%;
+    padding: 1em;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/*                                                             Article                                                          */
+
+article {
+    width: 50%;
+    height: 100%;
+}
+
+h1 {
+    color: yellow;
+}
+
+/*                                                             Aside                                                          */
+
+aside {
+    background-color: blue;
+    width: 80%;
+    text-align: justify;
+}
+
+aside figure {
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+aside p {
+    color: white;
+    padding: 1em;
+}
+
+/************************************************************* Footer ********************************************************/
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
