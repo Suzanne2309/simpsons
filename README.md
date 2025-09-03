@@ -1,4 +1,4 @@
-                                                                                                      ------ Projet Simpsons ------
+                                          ------ Projet Simpsons ------
 
 
 📌 Contexte
