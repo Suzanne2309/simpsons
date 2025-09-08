@@ -33,12 +33,12 @@ header {
 header h2 {
     color: #ffffff;
     padding: 0.5em;
+    font-size: 2em;
     text-align: center;
 }
 
 header figure img {
     width: 100%;
-    margin: auto;
     vertical-align: top;
 }
 
@@ -48,15 +48,14 @@ main {
     background-color: #ffffff;
     padding: 3em 0.6em;
     display: flex;
-    flex-direction: row;
 }
 
 /*                                                             Navbar                                                          */
 
 nav {
     background-color: 	#4f7ee2;
-    width: 25%;
-    height: 25%;
+    width: 10%;
+    height: 10%;
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -64,49 +63,60 @@ nav {
 }
 
 nav li {
+    /* list-style sur none permet de retirer le style de base, ici on veut retirer les points qui accompagne chaque éléments li */
     list-style: none;
     padding-bottom: 0.3em;
 }
 
 nav li a {
     color: #ffffff;
+    font-size: 1.2em;
+    /* text-decoration sur none permet de retirer la décoration du texte, ici ça a permis de retirer les soulignements des liens */
     text-decoration: none;
 }
 
 /*                                                             Article                                                          */
 
 article {
-    width: 50%;
+    width: 70%;
     padding: 2em 0.5em;
 }
 
 h1 {
     color: #f8db27;
-    font-size: 2.5em;
+    font-size: 3em;
+}
+
+article p {
+    text-align: justify;
 }
 
 /*                                                             Aside                                                          */
 
 aside {
     background-color: 	#4f7ee2;
-    width: 25%;
-    text-align: justify;
+    width: 20%;
 }
 
 aside figure {
     color: #ffffff;
-    padding: 1em;
+    padding: 1em 4em;
     text-align: center;
 }
 
 aside figure img {
-    width: 100%;
+    width: 80%;
     border: 0.1em solid #ffffff;
+}
+
+aside figure figcaption {
+    font-size: 1.5em;
 }
 
 aside p {
     color: #ffffff;
     padding: 1em;
+    text-align: justify;
 }
 
 /************************************************************* Footer ********************************************************/
@@ -116,4 +126,105 @@ footer {
     color: #ffffff;
     padding: 0.5em;
     text-align: center;
+}
+
+/************************************************************* Media Queries ********************************************************/
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+    
+    #wrapper {
+        width: 100%;
+    }
+    main {
+        padding: 0.6em;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0.5em;
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        width: 33%;
+    }
+
+    article {
+        width: 100%;
+        padding: 1em;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
+
+
+/* Tablette */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    
+   #wrapper {
+        width: 100%;
+    }
+    main {
+        padding: 0.6em;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0.5em;
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    nav li {
+        width: 33%;
+    }
+
+    article {
+        width: 100%;
+        padding: 1em;
+    }
+
+    article p{
+        font-size: 1.3em;
+    }
+
+    aside {
+        width: 100%;
+        display: flex;
+    }
+
+    aside figure{
+        width: 50%;
+    }
+
+    aside figure img{
+        width: 65%;
+    }
+
+    aside p{
+        width: 50%;
+        padding: 1em 2em;
+        font-size: 1.5em;
+        margin: auto;
+    }
+
 }
