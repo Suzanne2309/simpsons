@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-p {
-    padding-top: 0.5em;
+p + p {
+    margin-top: 1em;
 }
 
 /************************************************************* Body ********************************************************/
@@ -79,17 +79,19 @@ nav li a {
 
 article {
     width: 70%;
-    padding: 2em 0.5em;
+    padding: 1em 0.5em;
 }
 
 h1 {
     color: #f8db27;
+    padding-bottom: 0.3em;
     font-size: 3em;
 }
 
 article p {
     font-size: 1em;
     text-align: justify;
+    line-height: 1.5em;
 }
 
 /*                                                             Aside                                                          */
@@ -117,6 +119,7 @@ aside figure figcaption {
 aside p {
     color: #ffffff;
     padding: 1em;
+    line-height: 1.2em;
     text-align: justify;
 }
 
